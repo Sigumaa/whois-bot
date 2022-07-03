@@ -30,13 +30,13 @@ type Results struct {
 	Reserved   bool   `json:"reserved"`
 	ClientHold bool   `json:"client_hold"`
 	Detail     struct {
-		Registrant []string      `json:"registrant"`
-		Admin      []string      `json:"admin"`
-		Tech       []string      `json:"tech"`
-		Billing    []interface{} `json:"billing"`
-		Status     []string      `json:"status"`
-		Date       []string      `json:"date"`
-		NameServer []string      `json:"name_server"`
+		Registrant []string `json:"registrant"`
+		Admin      []string `json:"admin"`
+		Tech       []string `json:"tech"`
+		Billing    []string `json:"billing"`
+		Status     []string `json:"status"`
+		Date       []string `json:"date"`
+		NameServer []string `json:"name_server"`
 	} `json:"detail"`
 	Raw []string `json:"raw"`
 }
