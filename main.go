@@ -44,7 +44,7 @@ func main() {
 }
 
 func messageCreate(session *discordgo.Session, message *discordgo.MessageCreate) {
-	r := regexp.MustCompile(`[\w\W]+\.(com|net|org|jp|dev)`)
+	r := regexp.MustCompile(`[\w\W]+\.(com|net|org|jp|dev|info|xyz|tokyo|me|link|club|click|space|cc|in|tv|style|work)`)
 
 	if message.Author.Bot {
 		return
